@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useMemo } from "react";
+import "./App.css";
+import { makeVideos } from "./utils/helper";
+import Navbar from "./components/Navbar";
+import ChipBar from "./components/ChipBar";
+import VideoGrid from "./components/VideoGrid";
+import Sidebar from "./components/Sidebar";
 
 function App() {
+  const videos = useMemo(() => makeVideos(28), []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-white text-gray-900">
+      <Navbar />
+      <div className="flex mx-auto max-w-[1800px]">
+        <Sidebar />
+        <main className="flex-1 min-w-0">
+          <ChipBar />
+          <div className="px-3 sm:px-4 py-6">
+            <VideoGrid videos={videos} />
+          </div>
+        </main>
+      </div>
+
+      {/* Small UX niceties */}
+      <style>{`
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      `}</style>
     </div>
   );
 }
