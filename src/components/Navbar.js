@@ -30,9 +30,8 @@ const Navbar = ({ onToggleSidebar, toggle }) => {
         <div className="flex items-center gap-2 select-none">
           <div className="h-5 w-7 bg-red-600 rounded-[4px]" />
           <span className="text-lg font-semibold tracking-tight hidden sm:block">
-            YouTube
+            AITube
           </span>
-          <span className="text-xs text-gray-500 hidden sm:block">Clone</span>
         </div>
 
         {/* Center: search */}
