@@ -1,59 +1,70 @@
-🤖 AiTube – AI-Powered YouTube Search
+# Getting Started with Create React App
 
-AiTube is a modern YouTube-inspired web application that uses the YouTube Data API v3 combined with AI-enhanced search capabilities to make finding relevant videos smarter and faster.
-It keeps the familiar YouTube UI, adds infinite scroll, and enhances the search experience with AI-driven recommendations.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-🚀 Features
-🎥 Fetch live videos using the YouTube Data API v3
-🔍 AI-powered search enhancement → smarter results, not just keywords
-🔄 Infinite scroll (just like YouTube, auto-loads as you scroll)
-📱 Responsive UI (mobile-first, YouTube-like design)
-🎨 Tailwind CSS + modern UI components
-⚡ State management with Redux Toolkit
+## Available Scripts
 
-🛠️ Tech Stack
-React – UI framework
-Redux Toolkit – Global state management
-Tailwind CSS – Styling
-YouTube Data API v3 – Video data
-AI Layer – Search query enhancement & contextual filtering
-Vercel / Netlify – Deployment
+In the project directory, you can run:
 
-📂 Project Structure
-src/
-┣ components/ # Navbar, Sidebar, VideoCard, VideoList
-┣ hooks/ # Custom hooks (useYouTubeVideos)
-┣ services/ # YouTube + AI service integrations
-┣ store/ # Redux slices
-┣ App.jsx
-┗ index.jsx
+### `npm start`
 
-⚙️ Setup & Installation
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Clone the repository
-git clone https://github.com/<your-username>/aitube.git
-cd aitube
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Install dependencies
-npm install
+### `npm test`
 
-Set up environment variables
-Create a .env file in the root:
-REACT_APP_YOUTUBE_API_KEY=YOUR_API_KEY_HERE
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Run locally
-npm start
+### `npm run build`
 
-Build for production
-npm run build
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-🌍 Deployment
-Deployed easily on Vercel or Netlify.
-For Vercel:
-vercel --prod
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-🚧 Future Enhancements
-🎞️ Video details page with AI-powered transcript search
-📝 Personalized AI recommendations
-🌓 Dark mode
-🌍 Multi-language support
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
