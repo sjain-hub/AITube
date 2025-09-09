@@ -24,7 +24,7 @@ const VideoCard = ({ v }) => {
           <div className="mt-1 text-sm text-gray-600">
             <div className="truncate">{v.channel}</div>
             <div className="truncate">
-              {Intl.NumberFormat().format(v.views)} views • {v.age}
+              {v.views} views • {v.age}
             </div>
           </div>
         </div>

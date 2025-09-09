@@ -5,9 +5,11 @@ import Navbar from "./components/Navbar";
 import ChipBar from "./components/ChipBar";
 import VideoGrid from "./components/VideoGrid";
 import Sidebar from "./components/Sidebar";
+import { useYouTubeVideos } from "./hooks/useYouTubeVideos";
 
 function App() {
-  const videos = useMemo(() => makeVideos(28), []);
+  const { videos, loadVideos, loading } = useYouTubeVideos("react tutorials");
+  const videos1 = useMemo(() => makeVideos(28), []);
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -17,7 +19,11 @@ function App() {
         <main className="flex-1 min-w-0">
           <ChipBar />
           <div className="px-3 sm:px-4 py-6">
-            <VideoGrid videos={videos} />
+            <VideoGrid
+              loadVideos={loadVideos}
+              videos={videos.length ? videos : videos1}
+              loading={loading}
+            />
           </div>
         </main>
       </div>
